@@ -1,0 +1,14 @@
+{
+  "repo": "siamsquared",
+  "feeds": [
+    {
+      "source": "https://stockradars.co/webapp/login",
+      "feed_url": "https://stockradars.co/webapp/login",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}

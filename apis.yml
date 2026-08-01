@@ -1,7 +1,27 @@
 aid: siamsquared
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/siamsquared.png
 name: SiamSquared
-description: SiamSquared is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SiamSquared Technologies (Thailand) Co., Ltd. is the Bangkok-based company behind StockRadars
+  (stockradars.co), a retail stock-investment analysis platform branded "investing made simple."
+  StockRadars offers mobile apps (iOS and Android, including a paid StockRadars PLUS tier) and a
+  web app for the Thai stock market, with features such as customizable screening "radars,"
+  Top100 rankings, income-statement views, shareholder tracking, volume analysis, real-time price
+  alerts, and an in-house news feed (stockradars.news). The company is a 500 Global portfolio
+  company. As of this enrichment pass StockRadars publishes no public API, developer portal, SDKs,
+  or API documentation — it is a consumer-facing application, so most machine-readable API
+  artifacts are not applicable and this profile captures identity plus a domain-security probe.
 url: https://raw.githubusercontent.com/api-evangelist/siamsquared/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Stocks
+- Investing
+- Stock Analysis
+- Financial Data
+- Thailand
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/siamsquared-domain-security.yml
 - type: Website
   url: https://stockradars.co
+- type: SignUp
+  url: https://stockradars.co/register
+- type: Login
+  url: https://stockradars.co/webapp/login
+- type: Blog
+  url: https://stockradars.news/
+- type: Support
+  url: mailto:support@stockradars.co
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
